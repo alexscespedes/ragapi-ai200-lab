@@ -9,4 +9,4 @@ def health() -> dict[str, str]:
 
 @app.get("/version")
 def version() -> str:
-    return os.environ.get("APP_VERSION", "dev")
+    return os.environ.get("APP_VERSION", "dev-ci")
